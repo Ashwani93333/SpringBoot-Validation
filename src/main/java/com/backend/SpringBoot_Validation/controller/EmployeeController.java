@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/employee")
 public class EmployeeController {
 
-    @PostMapping("/")
+    @PostMapping("/addEmployee")
     public ResponseEntity<String> getEmployee(@Valid @RequestBody Employee employee) {
         return new ResponseEntity<> (
                 "Employee Added successfully"+
